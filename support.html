@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="梦境记录（Dream Journal）iOS App 帮助与支持 / Help and support for the Dream Journal iOS app.">
+  <title>梦境记录帮助与支持 · Dream Journal Support</title>
+  <style>
+    :root {
+      --bg: #f6f4fb;
+      --surface: #ffffff;
+      --text: #1e1b2e;
+      --muted: #575170;
+      --accent: #5443b0;
+      --border: #e2ddef;
+      --note: #efebfb;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0e22;
+        --surface: #17162e;
+        --text: #f1eefb;
+        --muted: #c2bcd8;
+        --accent: #bcaeff;
+        --border: #2e2a52;
+        --note: #211d43;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px; overflow-wrap: anywhere; }
+    a { color: var(--accent); }
+    main, header, footer { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 16px; }
+    header { padding-top: 28px; }
+    .brand { font-weight: 600; color: var(--muted); font-size: 0.95rem; margin: 0; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 10px 0 0; font-size: 0.95rem; }
+    h1 { font-size: 1.9rem; line-height: 1.3; margin: 40px 0 6px; }
+    h2 { font-size: 1.08rem; line-height: 1.45; margin: 0 0 6px; }
+    p, li { margin: 8px 0; }
+    ul, ol { padding-left: 1.25em; margin: 8px 0; }
+    .meta { color: var(--muted); margin: 0 0 16px; font-size: 0.95rem; }
+    .faq { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; margin: 14px 0; scroll-margin-top: 16px; }
+    .contact { background: var(--note); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; margin: 22px 0 8px; }
+    .toc { font-size: 0.95rem; padding-left: 1.4em; }
+    .toc li { margin: 2px 0; }
+    section.lang { padding-bottom: 24px; }
+    section.lang + section.lang { border-top: 1px solid var(--border); margin-top: 32px; }
+    footer { color: var(--muted); font-size: 0.88rem; padding-top: 8px; padding-bottom: 40px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<header>
+  <p class="brand">梦境记录 · Dream Journal</p>
+  <nav aria-label="语言与页面 / Language and pages">
+    <a href="#zh">中文</a>
+    <a href="#en">English</a>
+    <a href="privacy.html">隐私政策 / Privacy Policy</a>
+    <a href="index.html">首页 / Home</a>
+  </nav>
+</header>
+
+<main>
+<section id="zh" class="lang" lang="zh-Hans">
+  <h1>帮助与支持</h1>
+  <p class="meta">适用于 iPhone 和 iPad 上的“梦境记录”App 8.3 版</p>
+
+  <ol class="toc">
+    <li><a href="#zh-lock">锁屏后还会继续录音吗？</a></li>
+    <li><a href="#zh-transcribe">转录失败或不可用</a></li>
+    <li><a href="#zh-ai">设备端整理（Apple 智能）不可用</a></li>
+    <li><a href="#zh-illustration">梦境插图与风格切换</a></li>
+    <li><a href="#zh-sync">如何设置 iCloud 同步</a></li>
+    <li><a href="#zh-signin">提示“请在系统设置登录 iCloud”</a></li>
+    <li><a href="#zh-storage">提示“iCloud 空间不足”</a></li>
+    <li><a href="#zh-account">提示“iCloud 账号已变更”或其他同步错误</a></li>
+    <li><a href="#zh-backup">备份与恢复</a></li>
+    <li><a href="#zh-delete">删除云端数据</a></li>
+    <li><a href="#zh-contact">联系支持</a></li>
+  </ol>
+
+  <div class="faq" id="zh-lock">
+    <h2>锁屏后还会继续录音吗？</h2>
+    <p>会。开始录音后，锁屏或切到其他 App 都会继续录音，直到你回到 App 点结束；录音期间 iOS 会在屏幕顶部显示录音指示。App 停留在前台时，录音期间屏幕不会自动锁定。</p>
+    <p>来电、闹钟或 Siri 等系统中断会暂停录音，已录下的部分都会保留。中断结束后，系统允许时会自动继续；否则可以点“继续录音”，或直接点结束保存。</p>
+  </div>
+
+  <div class="faq" id="zh-transcribe">
+    <h2>转录失败或不可用</h2>
+    <ul>
+      <li>在 iOS“设置 → 隐私与安全性”中，确认“麦克风”和“语音识别”已允许梦境记录。</li>
+      <li>在 iOS“设置 → 通用 → 键盘”中开启“启用听写”。</li>
+      <li>在 App“设置 → 录音与转录 → 转录语言”中选择你说话的语言（简体中文、繁体中文或 English）。首次使用某种语言时请连接网络，以便系统下载语言资源。</li>
+      <li>在“设置”中找到“转录和本地解读”，点“立即重试全部”，或在梦境详情页对单段录音点“重新转录”。</li>
+    </ul>
+    <p>即使转录失败，原始录音也会一直保留，可以随时播放或稍后重试。</p>
+  </div>
+
+  <div class="faq" id="zh-ai">
+    <h2>设备端整理（Apple 智能）不可用</h2>
+    <p>自动生成标题、摘要、反思和标签使用 Apple 的设备端语言模型，需要：支持 Apple 智能的设备、iOS 26 或更高版本、已在“设置 → Apple 智能与 Siri”中开启 Apple 智能、模型已下载完成，并且模型支持 App 当前的语言。Apple 智能是否可用还取决于你所在的国家或地区。</p>
+    <p>不可用时，录音、转录、搜索和同步都能照常使用；你也可以在梦境详情页用“分享到其他 AI 软件”交给其他 AI App 解读，再导入结果。整理与解读仅供自我反思，不构成医疗或心理诊断。</p>
+  </div>
+
+  <div class="faq" id="zh-illustration">
+    <h2>梦境插图与风格切换</h2>
+    <ul>
+      <li>生成插图需要 iOS 18.1 或更高版本、支持 Apple 智能的设备，并在“设置 → Apple 智能与 Siri”中开启 Image Playground。按钮不可用时，App 会显示原因。</li>
+      <li>在 iOS 26 及以上版本，App 会先用设备端模型把梦改写成不含人物的场景描述。无法改写时，如果梦的语言和设备语言不同，面板会是空的，请自己输入想要的画面（比如几个关键词）。</li>
+      <li>在 iOS 26 及以上版本，面板里是不含人物的场景描述时默认选中 ChatGPT 风格；面板里是梦的摘要或原文时默认选中素描风格。ChatGPT 风格需要在“设置 → Apple 智能与 Siri → ChatGPT”中启用 ChatGPT 扩展，未启用时会改用素描风格；中国大陆 App Store 的用户默认使用素描风格，不提供 ChatGPT 风格。</li>
+      <li><strong>切换风格：</strong>在 Image Playground 面板中点风格选项，改选素描、插画、动画等 Apple 风格，或 ChatGPT 的风格。选择 ChatGPT 风格时，提示内容会发送给 OpenAI，详见<a href="privacy.html#zh-images">隐私政策</a>。</li>
+      <li>对结果不满意可以点“重新生成”；点“删除插图”会删除这张图，梦境内容不受影响。</li>
+    </ul>
+  </div>
+
+  <div class="faq" id="zh-sync">
+    <h2>如何设置 iCloud 同步</h2>
+    <ol>
+      <li>在 iOS 设置中登录你的 Apple 账号，并开启 iCloud 云盘。</li>
+      <li>在 App 中打开“设置 → iCloud 同步”，打开“启用 iCloud 同步”。</li>
+      <li>点“立即同步”。状态显示“同步完成”并带有对勾，表示已同步到最新。</li>
+      <li>在其他 iPhone 或 iPad 上登录<strong>同一个 Apple 账号</strong>，同样开启同步，即可下载云端的梦境、录音和插图。</li>
+    </ol>
+    <p>同步默认关闭，数据保存在你自己的 iCloud 中，占用你的 iCloud 储存空间。后台同步由 iOS 安排，打开 App 时也会补同步；离线时可以照常记录，联网后会自动重试。</p>
+  </div>
+
+  <div class="faq" id="zh-signin">
+    <h2>提示“请在系统设置登录 iCloud 并开启 iCloud Drive”</h2>
+    <p>说明设备当前无法使用 iCloud。请在 iOS 设置中登录 Apple 账号，开启 iCloud 云盘；如果 iCloud 设置的 App 列表中有“梦境记录”，请确认它的开关已打开，并检查“屏幕使用时间”是否限制了 iCloud。然后回到“设置 → iCloud 同步”点“立即同步”。本机记录始终保留，不会因此丢失。</p>
+  </div>
+
+  <div class="faq" id="zh-storage">
+    <h2>提示“iCloud 空间不足”</h2>
+    <p>请在 iOS 设置的 iCloud 储存空间管理中释放空间，或升级 iCloud+ 储存方案，然后点“立即同步”。录音占用空间最多，每分钟约 0.5 MB。空间不足期间，本机记录不受影响，有空间后会继续上传。</p>
+  </div>
+
+  <div class="faq" id="zh-account">
+    <h2>提示“iCloud 账号已变更”或其他同步错误</h2>
+    <p>为避免混合不同账号的数据，设备上的 iCloud 账号变化后同步会暂停。切回原来的 Apple 账号即可继续同步。</p>
+    <p>如果你要长期改用另一个 Apple 账号：先用“导出全部梦境”做一份备份，删除并重新安装 App，再用“从备份恢复”导入，最后开启 iCloud 同步。注意：删除 App 会删除本机数据，请先确认备份已保存在 App 以外的位置。</p>
+    <p>如果看到“iCloud 拒绝了这次同步（…）”，请联网后点“立即同步”重试；仍然失败时，请把括号中的错误信息发给我们。</p>
+  </div>
+
+  <div class="faq" id="zh-backup">
+    <h2>备份与恢复</h2>
+    <ul>
+      <li><strong>导出：</strong>“设置 → 备份与恢复 → 导出全部梦境”会生成一个 zip 文件，包含全部梦境、整理结果、标签、原始录音和插图。可以存到“文件”App、iCloud 云盘，或用隔空投送发到电脑。备份文件没有加密，请妥善保管。</li>
+      <li><strong>恢复：</strong>点“从备份恢复”，选择导出的 zip（或解压后的文件夹）。App 只添加这台设备上还没有的梦境，不会覆盖已有记录，重复恢复同一份备份也没有影响。来自更高版本 App 的备份需要先更新 App。</li>
+      <li><strong>换机：</strong>开启了 iCloud 同步时，在新设备登录同一 Apple 账号并开启同步即可，无需恢复密钥；不使用 iCloud 时，用备份文件迁移。</li>
+    </ul>
+  </div>
+
+  <div class="faq" id="zh-delete">
+    <h2>删除云端数据</h2>
+    <ul>
+      <li>在“设置 → iCloud 同步”点“删除全部云端数据”，会删除你 iCloud 中本 App 的全部梦境、录音和插图。其他同步设备会在下次同步时删除这些梦境；执行删除的这台设备保留本机副本并关闭同步。iCloud 中会保留少量不含梦境内容的删除标记，防止离线设备重新上传旧内容。</li>
+      <li>开启同步时，在梦境详情页的“更多操作”菜单选择“删除记录”，会把这条梦从所有同步设备和 iCloud 中删除。</li>
+      <li>仅删除 App 不会删除 iCloud 中的数据。删除 App 前，请确认需要保留的内容已同步或已导出备份。</li>
+    </ul>
+  </div>
+
+  <div class="contact" id="zh-contact">
+    <h2>联系支持</h2>
+    <p>邮箱：<a href="mailto:zguoau1@gmail.com?subject=Dream%20Journal%20Support">zguoau1@gmail.com</a></p>
+    <p>请附上 App 版本（在“设置 → 关于梦境记录”中查看）、iOS 版本、设备型号，以及错误提示的文字或截图。请不要发送你不希望离开设备的梦境内容或录音。</p>
+    <p>隐私相关说明见<a href="privacy.html#zh">隐私政策</a>。</p>
+  </div>
+</section>
+
+<section id="en" class="lang" lang="en">
+  <h1>Help &amp; Support</h1>
+  <p class="meta">For Dream Journal (梦境记录) 8.3 on iPhone and iPad</p>
+
+  <ol class="toc">
+    <li><a href="#en-lock">Does recording continue when the screen is locked?</a></li>
+    <li><a href="#en-transcribe">Transcription fails or is unavailable</a></li>
+    <li><a href="#en-ai">On-device organization (Apple Intelligence) is unavailable</a></li>
+    <li><a href="#en-illustration">Dream illustrations and switching styles</a></li>
+    <li><a href="#en-sync">Setting up iCloud sync</a></li>
+    <li><a href="#en-signin">"Sign in to iCloud" message</a></li>
+    <li><a href="#en-storage">"iCloud storage is full" message</a></li>
+    <li><a href="#en-account">"The iCloud account has changed" or other sync errors</a></li>
+    <li><a href="#en-backup">Backup and restore</a></li>
+    <li><a href="#en-delete">Deleting cloud data</a></li>
+    <li><a href="#en-contact">Contact support</a></li>
+  </ol>
+
+  <div class="faq" id="en-lock">
+    <h2>Does recording continue when the screen is locked?</h2>
+    <p>Yes. Once you start recording, it continues while the screen is locked or you switch to another app, until you return and stop it. iOS shows a recording indicator at the top of the screen. While the app stays in the foreground, the screen does not auto-lock during a recording.</p>
+    <p>Calls, alarms, Siri, and other system interruptions pause the recording, and everything captured so far is kept. When the interruption ends, recording resumes automatically if the system allows; otherwise tap Resume Recording, or stop to save.</p>
+  </div>
+
+  <div class="faq" id="en-transcribe">
+    <h2>Transcription fails or is unavailable</h2>
+    <ul>
+      <li>In iOS Settings → Privacy &amp; Security, make sure Microphone and Speech Recognition are allowed for Dream Journal.</li>
+      <li>In iOS Settings → General → Keyboard, turn on Enable Dictation.</li>
+      <li>In the app, choose the language you speak under Settings → Recording &amp; Transcription → Transcription Language (Simplified Chinese, Traditional Chinese, or English). The first time you use a language, stay online so the system can download its language assets.</li>
+      <li>In Settings, find Transcription &amp; On-device Interpretation and tap Retry All Now, or tap Transcribe Again on a single recording in its detail page.</li>
+    </ul>
+    <p>Even if transcription fails, the original recording is always kept, so you can play it or retry later.</p>
+  </div>
+
+  <div class="faq" id="en-ai">
+    <h2>On-device organization (Apple Intelligence) is unavailable</h2>
+    <p>Automatic titles, summaries, reflections, and tags use Apple's on-device language model. This requires a device that supports Apple Intelligence, iOS 26 or later, Apple Intelligence turned on under Settings → Apple Intelligence &amp; Siri, the model fully downloaded, and model support for the app's current language. Apple Intelligence availability also depends on your country or region.</p>
+    <p>Without it, recording, transcription, search, and sync all still work. You can also use Share to Another AI App on a dream's detail page to ask another AI app and import the result. Organization and interpretation are for self-reflection only and are not medical or psychological advice.</p>
+  </div>
+
+  <div class="faq" id="en-illustration">
+    <h2>Dream illustrations and switching styles</h2>
+    <ul>
+      <li>Illustrations require iOS 18.1 or later, a device that supports Apple Intelligence, and Image Playground turned on under Settings → Apple Intelligence &amp; Siri. If the button is unavailable, the app shows why.</li>
+      <li>On iOS 26 and later, the app first uses the on-device model to restate the dream as a scene without people. If that is not possible and the dream's language differs from your device language, the sheet opens empty; type what you want to see (a few keywords work well).</li>
+      <li>On iOS 26 and later, the sheet selects the ChatGPT style by default when it holds the scene description without people, and Sketch when it holds the dream's summary or text. The ChatGPT style requires the ChatGPT extension to be turned on under Settings → Apple Intelligence &amp; Siri → ChatGPT; otherwise the sheet uses Sketch. Users of the China mainland App Store get Sketch by default, and the ChatGPT style is not offered.</li>
+      <li><strong>To switch styles:</strong> tap the style options in the Image Playground sheet and pick an Apple style such as Sketch, Illustration, or Animation, or a ChatGPT style. With a ChatGPT style, the prompt is sent to OpenAI; see the <a href="privacy.html#en-images">Privacy Policy</a>.</li>
+      <li>Tap Create Another to try again. Remove Illustration deletes the image without affecting the dream.</li>
+    </ul>
+  </div>
+
+  <div class="faq" id="en-sync">
+    <h2>Setting up iCloud sync</h2>
+    <ol>
+      <li>In iOS Settings, sign in with your Apple Account and turn on iCloud Drive.</li>
+      <li>In the app, open Settings → iCloud Sync and turn on Enable iCloud Sync.</li>
+      <li>Tap Sync Now. "Up to date" with a checkmark means everything is synced.</li>
+      <li>On your other iPhone or iPad, sign in with the <strong>same Apple Account</strong> and turn on sync to download your dreams, recordings, and illustrations.</li>
+    </ol>
+    <p>Sync is off by default. Your data is stored in your own iCloud and uses your iCloud storage. iOS schedules background sync, and opening the app catches up. You can keep recording offline; sync retries when you are back online.</p>
+  </div>
+
+  <div class="faq" id="en-signin">
+    <h2>"Sign in to iCloud and enable iCloud Drive in Settings, then retry sync."</h2>
+    <p>This means iCloud is not available on the device. Sign in with your Apple Account in iOS Settings and turn on iCloud Drive. If Dream Journal appears in the list of apps in your iCloud settings, make sure it is turned on, and check that Screen Time is not restricting iCloud. Then return to Settings → iCloud Sync and tap Sync Now. Your local entries are always kept.</p>
+  </div>
+
+  <div class="faq" id="en-storage">
+    <h2>"iCloud storage is full."</h2>
+    <p>Free up space in iCloud storage management in iOS Settings, or upgrade to a larger iCloud+ plan, then tap Sync Now. Recordings use the most space, about 0.5 MB per minute. While storage is full, your local entries are not affected, and uploading continues once space is available.</p>
+  </div>
+
+  <div class="faq" id="en-account">
+    <h2>"The iCloud account has changed" or other sync errors</h2>
+    <p>To avoid mixing data from different accounts, sync pauses when the iCloud account on the device changes. Switch back to the original Apple Account to continue.</p>
+    <p>To move to a different Apple Account permanently: export a backup with Export All Dreams, delete and reinstall the app, import it with Restore from Backup, and then turn on iCloud sync. Deleting the app removes data on the device, so first make sure the backup is saved outside the app.</p>
+    <p>If you see "iCloud rejected this sync (…)", get online and tap Sync Now. If it keeps failing, send us the error text shown in parentheses.</p>
+  </div>
+
+  <div class="faq" id="en-backup">
+    <h2>Backup and restore</h2>
+    <ul>
+      <li><strong>Export:</strong> Settings → Backup &amp; Restore → Export All Dreams creates a zip file with all dreams, organization results, tags, original recordings, and illustrations. Save it to the Files app or iCloud Drive, or AirDrop it to a computer. The backup is not encrypted, so keep it somewhere safe.</li>
+      <li><strong>Restore:</strong> tap Restore from Backup and pick the exported zip (or the folder it was unzipped into). The app adds only dreams that are not already on the device and never overwrites existing entries, so restoring the same backup twice is harmless. Backups from a newer app version require updating the app first.</li>
+      <li><strong>New device:</strong> with iCloud sync, sign in with the same Apple Account on the new device and turn on sync; no recovery key is needed. Without iCloud, move your dreams with a backup file.</li>
+    </ul>
+  </div>
+
+  <div class="faq" id="en-delete">
+    <h2>Deleting cloud data</h2>
+    <ul>
+      <li>Settings → iCloud Sync → Delete All Cloud Data deletes all of this app's dreams, recordings, and illustrations from your iCloud. Your other synced devices remove these dreams at their next sync; the device that performs the deletion keeps its local copy and turns sync off. Small deletion markers with no dream content remain in iCloud so offline devices cannot re-upload old content.</li>
+      <li>With sync on, choosing Delete Entry from the More menu on a dream's detail page deletes that dream from iCloud and all synced devices.</li>
+      <li>Deleting the app alone does not delete data in iCloud. Before deleting the app, make sure anything you want to keep has synced or is in an exported backup.</li>
+    </ul>
+  </div>
+
+  <div class="contact" id="en-contact">
+    <h2>Contact support</h2>
+    <p>Email: <a href="mailto:zguoau1@gmail.com?subject=Dream%20Journal%20Support">zguoau1@gmail.com</a></p>
+    <p>Please include the app version (shown under Settings → About Dream Journal), your iOS version, your device model, and the error text or a screenshot. Please do not send dream content or recordings you want to keep on your device.</p>
+    <p>For privacy details, see the <a href="privacy.html#en">Privacy Policy</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Zhi Guo (JuiceLab) · <a href="privacy.html">隐私政策 / Privacy Policy</a> · <a href="#zh">中文</a> · <a href="#en">English</a></p>
+</footer>
+</body>
+</html>
