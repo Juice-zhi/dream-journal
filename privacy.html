@@ -65,7 +65,7 @@
 <main>
 <section id="zh" class="lang" lang="zh-Hans">
   <h1>梦境记录隐私政策</h1>
-  <p class="meta">生效日期：2026 年 10 月 9 日 · 适用于 iPhone 和 iPad 上的“梦境记录”App（8.3 版及之后版本）</p>
+  <p class="meta">生效日期：2026 年 10 月 14 日 · 适用于 iPhone 和 iPad 上的“梦境记录”App（8.3 版及之后版本）</p>
 
   <div class="summary">
     <ul>
@@ -73,7 +73,7 @@
       <li>我们不运营任何服务器，App 不会把任何数据发送给我们，我们也看不到你的梦境。</li>
       <li>无需注册账号；没有广告、没有数据分析、没有跟踪，App 不包含任何第三方 SDK。</li>
       <li>iCloud 同步默认关闭。开启后，数据保存在你自己 iCloud 账号的 CloudKit 私有数据库中，我们无法读取。</li>
-      <li>只有在你主动使用相应功能时，内容才会交给 Apple 的系统服务、OpenAI（经 Apple 的 ChatGPT 扩展）或你选择的其他 App。</li>
+      <li>只有在你主动使用相应功能时，内容才会交给 Apple 的系统服务；交给 OpenAI（经 Apple 的 ChatGPT 扩展）或其他 AI App 之前，App 会先说明发送什么、发送给谁，并征得你的同意。</li>
     </ul>
   </div>
 
@@ -145,17 +145,17 @@
   <ul>
     <li><strong>交给面板的提示：</strong>在 iOS 26 及以上且设备端模型可用时，App 先在设备上把这条梦改写成简短的场景描述（要求模型不写人物）和几个关键词。如果无法改写（例如系统版本较早或模型不可用），提示为这条梦的摘要（没有摘要时为原文，最多约 1,200 字）、标题和前三个标签；只有检测到梦境语言与设备语言不同时，面板才为空，由你自行输入。你可以在面板中查看和修改提示、选择风格。</li>
     <li><strong>Apple 风格</strong>（如素描、插画、动画）：由 Apple 在设备上或通过 Apple 私有云计算（Private Cloud Compute）处理，具体取决于系统版本，适用 Apple 的隐私政策。</li>
-    <li><strong>ChatGPT 风格</strong>：在 iOS 26 及以上版本，当面板中的提示是上述不含人物的场景描述（或面板为空、由你自己输入）时，面板默认选中 ChatGPT 风格；当提示是梦境摘要或原文时，面板默认选中素描风格，只有你自己改选 ChatGPT 风格才会发送。该风格由 Apple 的 ChatGPT 扩展提供，只有你已在系统设置中启用 ChatGPT 扩展时才可用，否则面板改用素描风格。中国大陆 App Store 的用户不提供 ChatGPT 风格。如果你使用 ChatGPT 风格，面板中的提示会经 Apple 的 ChatGPT 扩展发送给 OpenAI 生成图片，适用 OpenAI 的隐私政策和使用条款以及 Apple 关于 ChatGPT 扩展的说明。使用这一功能时，App 本身不直接连接 OpenAI，请求由 Apple 的 ChatGPT 扩展发送。</li>
-    <li>如果你不希望内容发送给 OpenAI，可以在面板中改选 Apple 的风格，或在“设置 → Apple 智能与 Siri”中关闭 ChatGPT 扩展。</li>
+    <li><strong>ChatGPT 风格</strong>：在 iOS 26 及以上版本，第一次生成插图前，App 会说明 ChatGPT 风格会发送什么（插图面板里的画面描述，文字形式，通常是不含人物的场景描述）、发送给谁（OpenAI，经 Apple 的 ChatGPT 扩展），并询问你是否使用。只有你选择“允许，默认用 ChatGPT”后，面板才会提供并默认选中 ChatGPT 风格；面板里是梦境摘要或原文时仍默认素描风格，只有你自己改选 ChatGPT 风格才会发送。选择“只用 Apple 风格”则不提供 ChatGPT 风格，不会发送给 OpenAI。这一选择可随时在“设置 → 第三方 AI”中更改。该风格还需要你已在系统设置中启用 ChatGPT 扩展；中国大陆 App Store 的用户不提供 ChatGPT 风格。发送给 OpenAI 的内容用于生成这张图片。Apple 说明，未登录 ChatGPT 账号时 OpenAI 不会保存这些请求；登录后适用你的 ChatGPT 账号设置和 OpenAI 的隐私政策。使用这一功能时，App 本身不直接连接 OpenAI，请求由 Apple 的 ChatGPT 扩展发送。</li>
+    <li>如果你不希望内容发送给 OpenAI，可以在“设置 → 第三方 AI”中关闭“插图使用 ChatGPT 风格”，在面板中改选 Apple 的风格，或在系统“设置 → Apple 智能与 Siri”中关闭 ChatGPT 扩展。</li>
     <li>生成的插图以 JPEG 文件保存在设备上；开启 iCloud 同步后也会保存到你的 iCloud，并会包含在你导出的备份中。你可以随时用“删除插图”删除。</li>
   </ul>
 
   <h2 id="zh-share">8. 分享给第三方 App 与剪贴板</h2>
   <ul>
-    <li>只有当你在“使用其他 AI 解读”页面点“分享到其他 AI 软件”“复制提示词并分享录音”或“复制提示词并打开 ChatGPT”时，内容才会离开 App。你可以选择包含原始记录或转录、本地整理、标签和记录时间，或改为只分享原始录音，并能在发送前预览。</li>
+    <li>只有当你在“使用其他 AI 解读”页面点“分享到其他 AI 软件”“复制提示词并分享录音”或“复制提示词并打开 ChatGPT”（中国大陆 App Store 为“复制提示词”），并在随后出现的确认框中点“同意并发送”后，内容才会离开 App。确认框会按你当前的选择列出将发送的内容（梦境原文或转录、本地整理的摘要、标签、记录时间或原始录音，以及整理说明）和接收方（你在系统分享面板中选择的 AI App 及其服务提供方，例如 OpenAI 的 ChatGPT、Anthropic 的 Claude；“复制提示词并打开 ChatGPT”对应 OpenAI；“复制提示词”对应你粘贴提示词的 AI App 及其服务提供方）。点“取消”则什么都不发送。你也能在发送前预览全部内容。发送是为了让对方生成你请求的整理和解读；对方如何保存和使用，由其隐私政策和你在对方账号中的设置决定。</li>
     <li>录音模式只把原始 M4A 文件交给系统分享面板，不附带转录；提示词会单独复制到剪贴板。“复制提示词并打开 ChatGPT”会把提示词复制到剪贴板，并打开 ChatGPT App（未安装时在浏览器中打开 chatgpt.com）；中国大陆 App Store 的用户看到的是只复制、不打开其他 App 的“复制提示词”。</li>
     <li>App 复制的提示词只放在本机剪贴板，不会通过 Apple 的通用剪贴板同步到你的其他设备，并在 30 分钟后自动失效。</li>
-    <li>内容一旦交给你选择的 App 或服务（例如 ChatGPT、Claude），就适用对方的隐私政策和条款，我们无法控制或删除。</li>
+    <li>我们只把内容交给你在确认框中同意的接收方。App 指名的接收方是 OpenAI（“复制提示词并打开 ChatGPT”会打开 OpenAI 的 ChatGPT App 或 chatgpt.com；<a href="https://openai.com/policies/privacy-policy/">OpenAI 隐私政策</a>）以及分享面板中常见的 Anthropic（Claude；<a href="https://www.anthropic.com/legal/privacy">Anthropic 隐私政策</a>）。内容由你在对方的 App 或网站中发送，在你自己的账号下处理，可能保存在对话记录中。这两家都公开承诺不出售个人数据，并允许你在账号的数据设置中选择是否用对话改进模型；我们确认它们对这些内容提供的保护不低于本政策和 App Store 审核指南的要求。对于你在分享面板中自行选择的其他 App，内容由你直接交给该 App，适用其隐私政策和条款。内容交出后，我们无法控制或删除。</li>
     <li>每次从该页面分享或复制后，当你返回 App 且该页面仍打开时，如果剪贴板内容在分享后发生了变化，App 会读取一次剪贴板，以便自动导入 AI 回复中的 JSON 结果；iOS 可能会询问是否允许粘贴。读取一次后，App 不会再读取剪贴板，直到你再次分享或复制。导入的内容只保存在这条梦中（开启同步时也会同步），不会发送给我们。</li>
   </ul>
 
@@ -198,7 +198,7 @@
 
 <section id="en" class="lang" lang="en">
   <h1>Dream Journal Privacy Policy</h1>
-  <p class="meta">Effective date: October 9, 2026 · Applies to the Dream Journal app (梦境记录) for iPhone and iPad, version 8.3 and later</p>
+  <p class="meta">Effective date: October 14, 2026 · Applies to the Dream Journal app (梦境记录) for iPhone and iPad, version 8.3 and later</p>
 
   <div class="summary">
     <ul>
@@ -206,7 +206,7 @@
       <li>We run no servers. The app sends no data to us, and we cannot see your dreams.</li>
       <li>No account is required. There are no ads, no analytics, and no tracking, and the app contains no third-party SDKs.</li>
       <li>iCloud sync is off by default. When you turn it on, data is stored in the CloudKit private database of your own iCloud account, which we cannot read.</li>
-      <li>Content goes to Apple's system services, to OpenAI (through Apple's ChatGPT extension), or to another app only when you use the related feature.</li>
+      <li>Content goes to Apple's system services only when you use the related feature. Before anything goes to OpenAI (through Apple's ChatGPT extension) or another AI app, the app tells you what will be sent and to whom, and asks for your permission.</li>
     </ul>
   </div>
 
@@ -278,17 +278,17 @@
   <ul>
     <li><strong>What the sheet receives:</strong> On iOS 26 and later, when the on-device model is available, the app first restates the dream on your device as a short scene description (the model is instructed to leave out people), plus a few keywords. If that is not possible (for example, on an earlier system version or when the model is unavailable), the prompt is the dream's summary (or its original text if there is no summary, up to about 1,200 characters), its title, and its first three tags. Only if the dream is detected to be in a different language from your device does the sheet open empty for you to type a prompt. You can review and edit the prompt and choose a style in the sheet.</li>
     <li><strong>Apple styles</strong> (such as Sketch, Illustration, and Animation) are processed by Apple, on your device or on Apple's Private Cloud Compute depending on your system version, under Apple's Privacy Policy.</li>
-    <li><strong>ChatGPT style:</strong> On iOS 26 and later, the sheet selects the ChatGPT style by default when its prompt is the scene description without people (or when the sheet is empty and you type the prompt yourself). When the prompt is the dream's summary or text, the sheet selects Sketch instead, and that text is sent only if you choose the ChatGPT style yourself. This style is provided by Apple's ChatGPT extension and is available only if you have turned on the ChatGPT extension in system settings; otherwise the sheet uses Sketch. The ChatGPT style is not offered to users of the China mainland App Store. If you use the ChatGPT style, the prompt in the sheet is sent to OpenAI through Apple's ChatGPT extension to create the image. OpenAI's privacy policy and terms, and Apple's terms for the ChatGPT extension, apply. For this feature, the app itself makes no connection to OpenAI; the request is sent by Apple's ChatGPT extension.</li>
-    <li>If you do not want content sent to OpenAI, choose an Apple style in the sheet, or turn off the ChatGPT extension under Settings → Apple Intelligence &amp; Siri.</li>
+    <li><strong>ChatGPT style:</strong> On iOS 26 and later, before your first illustration the app explains what the ChatGPT style sends (the description in the illustration sheet, as text, usually a scene description without people) and to whom (OpenAI, through Apple's ChatGPT extension), and asks whether to use it. Only if you choose Allow, Default to ChatGPT does the sheet offer and preselect the ChatGPT style; when the sheet holds the dream's summary or text it still preselects Sketch, and that text is sent only if you choose the ChatGPT style yourself. With Apple Styles Only, the ChatGPT style is not offered and nothing is sent to OpenAI. You can change this anytime in Settings → Third-party AI. The style also requires the ChatGPT extension to be turned on in system settings, and it is not offered to users of the China mainland App Store. OpenAI receives the content to create the image. Apple states that without a ChatGPT account OpenAI does not store these requests; if you sign in, your ChatGPT account settings and OpenAI's privacy policy apply. For this feature, the app itself makes no connection to OpenAI; the request is sent by Apple's ChatGPT extension.</li>
+    <li>If you do not want content sent to OpenAI, turn off Use ChatGPT Style for Illustrations in Settings → Third-party AI, choose an Apple style in the sheet, or turn off the ChatGPT extension under Settings → Apple Intelligence &amp; Siri.</li>
     <li>The resulting illustration is stored on your device as a JPEG file. With iCloud sync on, it is also stored in your iCloud, and it is included in backups you export. You can delete it at any time with Remove Illustration.</li>
   </ul>
 
   <h2 id="en-share">8. Sharing to other apps and the clipboard</h2>
   <ul>
-    <li>Content leaves the app only when you tap Share to Another AI App, Copy Prompt &amp; Share Audio, or Copy Prompt &amp; Open ChatGPT on the Use Another AI screen. You choose whether to include the original entry or transcript, the on-device organization, tags, and the entry date, or to share only the original recordings, and you can preview it before sending.</li>
+    <li>Content leaves the app only when you tap Share to Another AI App, Copy Prompt &amp; Share Audio, or Copy Prompt &amp; Open ChatGPT (Copy Prompt on the China mainland App Store) on the Use Another AI screen and then tap Agree and Send in the confirmation dialog that follows. The dialog lists, based on your current choices, what will be sent (the dream text or transcript, the on-device summary, tags, the entry date or the original recordings, plus instructions for organizing it) and who receives it (the AI app you pick in the share sheet and the company that runs it, such as OpenAI's ChatGPT or Anthropic's Claude; OpenAI for Copy Prompt &amp; Open ChatGPT; for Copy Prompt, the AI app you paste it into and the company that runs it). Tapping Cancel sends nothing. You can also preview everything before sending. It is sent so the recipient can produce the organization and reflection you asked for; how the recipient keeps and uses it is governed by its privacy policy and your settings in that service.</li>
     <li>In audio mode, only the original M4A files are passed to the system share sheet, without any transcript; the prompt is copied to the clipboard separately. Copy Prompt &amp; Open ChatGPT copies the prompt to the clipboard and opens the ChatGPT app (or chatgpt.com in your browser if the app is not installed); users of the China mainland App Store see Copy Prompt instead, which only copies the prompt.</li>
     <li>Prompts the app copies stay on this device's clipboard: they are not shared with your other devices through Apple's Universal Clipboard, and they expire after 30 minutes.</li>
-    <li>Once content is handed to the app or service you choose (for example ChatGPT or Claude), that provider's privacy policy and terms apply. We cannot control or delete it.</li>
+    <li>We hand content only to the recipient you agreed to in the confirmation dialog. The recipients the app names are OpenAI (Copy Prompt &amp; Open ChatGPT opens OpenAI's ChatGPT app or chatgpt.com; <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a>) and, commonly in the share sheet, Anthropic (Claude; <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a>). You send the content in their app or website, it is processed under your own account, and it may be kept in your chat history. Both companies publicly state that they do not sell personal data and let you choose in your account's data settings whether conversations are used to improve their models; we confirm that they protect this content at least as well as this policy and the App Store Review Guidelines require. For any other app you pick in the share sheet, you hand the content to that app directly and its privacy policy and terms apply. Once content is handed over, we cannot control or delete it.</li>
     <li>After each share or copy from that screen, when you return to the app while that screen is still open, the app reads the clipboard once if its content has changed since the share, so it can import the JSON result from an AI reply; iOS may ask whether to allow pasting. After that one read, the app does not read the clipboard again until you share or copy again. Imported content is saved only with that dream (and synced if sync is on) and is never sent to us.</li>
   </ul>
 
